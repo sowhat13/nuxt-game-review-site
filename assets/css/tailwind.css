@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+  .page-enter-active {
+    animation: bounce-in .8s;
+  }
+  .page-leave-active {
+    animation: bounce-out .5s;
+  }
+  @keyframes bounce-in {
+    0% { transform: scale(0) }
+    50% { transform: scale(1.5) }
+    100% { transform: scale(1) }
+  }
+  @keyframes bounce-out {
+    0% { transform: scale(1) }
+    50% { transform: scale(1.5) }
+    100% { transform: scale(0) }
+  }
+  
+  /* .slide-left-enter,
+  .slide-right-leave-active {
+    opacity: 0;
+    transform: translate(30px, 0);
+  }
+  .slide-left-leave-active,
+  .slide-right-enter {
+    opacity: 0;
+    transform: translate(-30px, 0);
+  } */
+  
